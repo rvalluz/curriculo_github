@@ -1,0 +1,228 @@
+/* Configurações Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais moderna */
+    line-height: 1.6; /* Espaçamento entre linhas para facilitar a leitura */
+    background-color: #f4f4f9; /* Um cinza bem clarinho para o fundo */
+    color: #333; /* Cor do texto quase preta */
+    max-width: 800px; /* Largura máxima do currículo */
+    margin: 40px auto; /* Centraliza o currículo na tela */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra leve nas bordas */
+    background: white; /* Cor de fundo do papel do currículo */
+}
+
+/* Títulos */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9; /* Linha embaixo do título */
+    padding-bottom: 5px;
+}
+
+/* Links */
+a {
+    color: #2980b9;
+    text-decoration: none; /* Tira o sublinhado padrão */
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline; /* O sublinhado só aparece quando passa o mouse */
+}
+
+/* Listas */
+ul {
+    list-style-type: square; /* Muda a bolinha da lista para quadradinho */
+}
+
+/* Estilizando os links de contato como se fossem botões */
+header p a {
+    display: inline-block;
+    background-color: #25d366; /* Verde do WhatsApp */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 0.9em;
+    transition: background 0.3s;
+}
+
+/* Muda a cor do botão de e-mail especificamente */
+header p a[href^="mailto"] {
+    background-color: #3498db; /* Azul para o e-mail */
+}
+
+/* Efeito ao passar o mouse */
+header p a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+/* Botão estilo GitHub Dark */
+header p a[href*="github.com"] {
+    background-color: #21262d; /* Cinza escuro do botão */
+    color: #c9d1d9;            /* Texto cinza claro */
+    border: 1px solid #30363d; /* Borda sutil */
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+/* Efeito ao passar o mouse (Hover) */
+header p a[href*="github.com"]:hover {
+    background-color: #30363d; /* Fica levemente mais claro */
+    border-color: #8b949e;     /* A borda ganha destaque */
+    color: #ffffff;            /* O texto fica branco puro */
+    text-decoration: none;
+}
+/* Botão estilo LinkedIn Oficial */
+header p a[href*="linkedin.com"] {
+    background-color: #0077b5; /* Azul LinkedIn */
+    color: #ffffff;            /* Texto branco para leitura clara */
+    border: 1px solid #006097; /* Borda um tom mais escuro */
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+/* Efeito ao passar o mouse no LinkedIn (Hover) */
+header p a[href*="linkedin.com"]:hover {
+    background-color: #005582; /* Fica um azul mais fechado */
+    border-color: #004165;
+    box-shadow: 0 0 8px rgba(0, 119, 181, 0.4); /* Um brilho azul suave */
+    text-decoration: none;
+}
+/* Botão estilo E-mail / Gmail */
+header p a[href^="mailto:"] {
+    background-color: #ea4335; /* Vermelho Gmail */
+    color: #ffffff;            /* Texto branco puro */
+    border: 1px solid #c5392d; /* Borda um pouco mais escura */
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+/* Efeito ao passar o mouse no E-mail (Hover) */
+header p a[href^="mailto:"]:hover {
+    background-color: #d33828; /* Fica um vermelho mais fechado */
+    border-color: #b02f22;
+    box-shadow: 0 0 8px rgba(234, 67, 53, 0.4); /* Brilho vermelho suave */
+    text-decoration: none;
+}
+/* Botão estilo WhatsApp Oficial */
+header p a[href*="wa.me"] {
+    background-color: #25d366; /* Verde oficial */
+    color: #ffffff;            /* Texto branco para contraste máximo */
+    border: 1px solid #128c7e; /* Borda verde escura clássica */
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+/* Efeito ao passar o mouse no WhatsApp (Hover) */
+header p a[href*="wa.me"]:hover {
+    background-color: #128c7e; /* Fica o verde mais escuro do "fundo" do app */
+    border-color: #075e54;
+    box-shadow: 0 0 10px rgba(37, 211, 102, 0.5); /* Brilho verde neon suave */
+    text-decoration: none;
+}
+/* Estilo da Seção de Projetos */
+.categoria-projeto {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #1c2128; /* Um tom levemente diferente para destacar */
+    border-radius: 8px;
+    border: 1px solid #30363d;
+}
+
+.categoria-projeto h3 {
+    color: #58a6ff;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.categoria-projeto ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.categoria-projeto li {
+    margin-bottom: 10px;
+    color: #c9d1d9;
+}
+
+/* Estilo do link de "Testar" */
+.categoria-projeto a {
+    color: #2ea043; /* Verde de "sucesso" do GitHub para incentivar o clique */
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.categoria-projeto a:hover {
+    color: #3fb950;
+    text-decoration: none;
+}
+/* Estilo do Selo de Tecnologia (Badge) */
+.badge-tech {
+    background-color: #0d1117; /* Fundo escuro */
+    color: #61dafb;            /* O azul clássico do React */
+    border: 1px solid #61dafb; /* Borda na cor do React */
+    font-size: 0.7rem;         /* Pequenino */
+    padding: 2px 8px;
+    border-radius: 20px;       /* Formato de pílula */
+    margin-left: 10px;
+    vertical-align: middle;    /* Alinha com o texto do título */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Um efeito de brilho suave no selo do React */
+.badge-tech:hover {
+    box-shadow: 0 0 8px rgba(97, 218, 251, 0.5);
+    cursor: default;
+}
+/* Cores específicas para cada tecnologia Web */
+
+/* HTML5 - Laranja */
+.badge-html {
+    color: #e34c26;
+    border-color: #e34c26;
+}
+
+/* CSS3 - Azul */
+.badge-css {
+    color: #264de4;
+    border-color: #264de4;
+}
+
+/* Node.js - Verde */
+.badge-node {
+    color: #68a063;
+    border-color: #68a063;
+}
+
+/* Ajuste para que os selos não fiquem colados uns nos outros */
+.badge-tech {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+/* Python - Azul Oficial */
+.badge-python {
+    color: #3776ab;
+    border-color: #3776ab;
+}
+
+/* Efeito de brilho para o Python no Hover */
+.badge-python:hover {
+    box-shadow: 0 0 8px rgba(55, 118, 171, 0.5);
+}
